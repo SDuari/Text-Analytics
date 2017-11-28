@@ -119,7 +119,7 @@ library(NLP)
 
 # POS tagging: need to define a function first
 
-tagPOS <-  function(x, ...) {   # user defined function to perform POS tagging
+tagPOS <-  function(x) {   # user defined function to perform POS tagging
   s <- as.String(x)
   word_token_annotator <- Maxent_Word_Token_Annotator() 
   a2 <- Annotation(1L, "sentence", 1L, nchar(s))  ###creates an annotation object
