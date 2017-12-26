@@ -376,7 +376,7 @@ tkplot.igraph(deg_graph, edge.label = E(deg_graph)$weight)
 
 
 # DegExt ALGORITHM
-nodes_deg_w = strength(deg_graph, mode = "all", loops = FALSE, weights = get.edge.attribute(deg_graph, name = "weight"))
+nodes_deg_w = strength(deg_graph, mode = "all", loops = FALSE, weights = get.edge.attribute(deg_graph, name = "weight")) # strength calculates weighted degree
 
 # Sort and select top 10 ranked words
 key_deg <- nodes_deg_w[order(nodes_deg_w, decreasing = TRUE)]
